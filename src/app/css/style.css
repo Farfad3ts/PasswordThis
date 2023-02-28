@@ -1,0 +1,29 @@
+:root {
+    --main-bg-color: #FEFAE0;
+    --tea-grean: #CCD5AE;
+    --random-green: #E9EDC9;
+    --light-brown: #FAEDCD;
+    --dark-brown: #D4A373;
+    --background: linear-gradient(to right, #FEFAE0, #CCD5AE);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* background-color: var(--main-bg-color); */
+    background-color: var(--background);
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: var(--tea-grean);
+    height: 50px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "passwordthis",
+  "productName": "PasswordThis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farfad3ts/PasswordThis.git"
+  },
+  "keywords": ["password", "generator", "electron", "javascript", "password Manager"],
+  "author": "Farfad3ts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Farfad3ts/PasswordThis/issues"
+  },
+  "homepage": "https://github.com/Farfad3ts/PasswordThis#readme",
+  "devDependencies": {
+    "electron": "^23.1.1"
+  },
+  "dependencies": {
+    "npm": "^9.5.1"
+  }
+}
