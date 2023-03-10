@@ -4,7 +4,6 @@
     --random-green: #E9EDC9;
     --light-brown: #FAEDCD;
     --dark-brown: #D4A373;
-    --background: linear-gradient(to right, #FEFAE0, #CCD5AE);
 }
 
 * {
@@ -13,10 +12,13 @@
 }
 
 body {
-    /* background-color: var(--main-bg-color); */
-    background-color: var(--background);
+    background-image: radial-gradient(var(--random-green), var(--main-bg-color));
+    min-height: 100vh;
     margin: 0px;
     padding: 0px;
+}
+
+main{
 }
 
 nav {
@@ -26,4 +28,50 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#passwordContainer {
+    background-color: burlywood;
+    display: grid;
+    position: relative;
+    height: 75px;
+    margin: 20px 50px;
+    border-radius: 10px;
+    grid-template-columns: 200px 300px repeat(3, 10%);
+    grid-template-rows: 1fr 1fr;
+}
+
+#headerPasswordContainer, #footerPasswordContainer {
+    display: contents;
+}
+
+#headerPasswordContainer > span, #footerPasswordContainer > span {
+    justify-self: center;
+    padding-top: 10px;
+}
+
+.appName{
+    grid-column: 1 / 2;
+}
+
+.appEmail{
+    grid-column: 2 / 3;
+}
+
+.appPassword{
+    grid-column-start: 2;
+}
+
+.editButton, .seePassword{
+    grid-column-start: 4;
 }
