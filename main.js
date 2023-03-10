@@ -1,13 +1,11 @@
 const { app, BrowserWindow, Menu, ipcMain  } = require("electron");
 const path = require("path");
-const { versions } = require("process");
 
 const isMac = process.platform === 'darwin'
-let mainWindow;
-let aboutWindow
 
+let mainWindow
 function createWindows() {
-    mainWindow = new BrowserWindow({
+   mainWindow = new BrowserWindow({
         title: "PasswordThis",
         width: 800,
         height: 600,
@@ -22,7 +20,7 @@ function createWindows() {
 }
 
 function createAboutWindows(){
-    aboutWindow = new BrowserWindow({
+   const aboutWindow = new BrowserWindow({
         title: "About - PasswordThis",
         width: 300,
         height: 270,
