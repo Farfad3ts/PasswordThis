@@ -2,40 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PasswordThis</title>
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" /> -->
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Golos+Text:wght@500&family=Righteous&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&family=Sono:wght@200;300;400;500;600;700;800&family=Staatliches&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"/>
 </head>
 
-<body>
+<body onload="fillPassword()">
     <nav id="navbar">
         <h4 class="logo">PasswordThis</h4>
-        <button>
+        <button id="addPasswordButton" onclick="showAddPassword()">
             <i class="fa-sharp fa-solid fa-plus"></i>
         </button>
     </nav>
     <main>
         <div id="passwordContainer">
             <div id="headerPasswordContainer">
-                <span class="appName">
-                    Spotify
-                </span>
-                <span class="appEmail">
-                    AveryLongEmail@lookAtThisEmail.com
-                </span>
-                <button class="editButton"><i class="fa-regular fa-pen-to-square"></i></button>
-                <button class="deleteButton"><i class="fa-solid fa-trash"></i></button>
+                <span class="appName"> Spotify </span>
+                <span class="appEmail"> AveryLongEmail@lookAtThisEmail.com </span>
+                <button class="editButton">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+                <button class="deleteButton">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            <div id="footerPasswordContainer">
+                <span class="appPassword"></span>
+                <button class="seePassword"><i class="fa-solid fa-eye"></i></button>
+                <button class="copyPassword"><i class="fa-solid fa-copy"></i></button>
+            </div>
+        </div>
+        <div id="passwordContainer">
+            <div id="headerPasswordContainer">
+                <span class="appName"> Spotify </span>
+                <span class="appEmail"> AveryLongEmail@lookAtThisEmail.com </span>
+                <button class="editButton">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+                <button class="deleteButton">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            <div id="footerPasswordContainer">
+                <span class="appPassword"></span>
+                <button class="seePassword"><i class="fa-solid fa-eye"></i></button>
+                <button class="copyPassword"><i class="fa-solid fa-copy"></i></button>
+            </div>
+        </div>
+        <div id="passwordContainer">
+            <div id="headerPasswordContainer">
+                <span class="appName"> Spotify </span>
+                <span class="appEmail"> AveryLongEmail@lookAtThisEmail.com </span>
+                <button class="editButton">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+                <button class="deleteButton">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            <div id="footerPasswordContainer">
+                <span class="appPassword"></span>
+                <button class="seePassword"><i class="fa-solid fa-eye"></i></button>
+                <button class="copyPassword"><i class="fa-solid fa-copy"></i></button>
+            </div>
+        </div>
+        <div id="passwordContainer">
+            <div id="headerPasswordContainer">
+                <span class="appName"> Spotify </span>
+                <span class="appEmail"> AveryLongEmail@lookAtThisEmail.com </span>
+                <button class="editButton">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+                <button class="deleteButton">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
             </div>
             <div id="footerPasswordContainer">
                 <span class="appPassword"></span>
@@ -44,8 +95,6 @@
             </div>
         </div>
     </main>
-
-
 
     <script src="./js/renderer.js"></script>
 </body>
